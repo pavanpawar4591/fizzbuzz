@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">11</td><td class="numi">11</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.steerlean.fizzbuzz.TestApp</td><td><a href="#m1"><b>testStart</b>  </a></td><td class="numi">1</td><td>1513672460924</td><td class="numi">107</td></tr>
+<tr class="passedeven"><td rowspan="3">com.steerlean.fizzbuzz.TestDivisibility</td><td><a href="#m2"><b>divisiblebyzero</b>  </a></td><td class="numi">1</td><td>1513672461033</td><td class="numi">13</td></tr><tr class="passedeven"><td><a href="#m3"><b>testBuzzParser</b>  </a></td><td class="numi">1</td><td>1513672461047</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m4"><b>testFizzParser</b>  </a></td><td class="numi">1</td><td>1513672461047</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">com.steerlean.fizzbuzz.TestNumberProcessor</td><td><a href="#m5"><b>testProcessRange</b>  </a></td><td class="numi">1</td><td>1513672461048</td><td class="numi">26</td></tr>
+<tr class="passedeven"><td rowspan="1">com.steerlean.fizzbuzz.TestRuleConfiguratorOne</td><td><a href="#m6"><b>TestConfigure</b>  </a></td><td class="numi">1</td><td>1513672461075</td><td class="numi">13</td></tr>
+<tr class="passedodd"><td rowspan="2">com.steerlean.fizzbuzz.rule.TestRuleFactory</td><td><a href="#m7"><b>testDivisibilityRuleCreation</b>  </a></td><td class="numi">1</td><td>1513672461089</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m8"><b>testSumOfDigitalVisibility</b>  </a></td><td class="numi">1</td><td>1513672461090</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">com.steerlean.fizzbuzz.TestRulesConfigurator</td><td><a href="#m9"><b>testConfigure</b>  </a></td><td class="numi">1</td><td>1513672461095</td><td class="numi">30</td></tr>
+<tr class="passedodd"><td rowspan="2">com.steerlean.fizzbuzz.TestSumOfDigitsDivisibility</td><td><a href="#m10"><b>testParse</b>  </a></td><td class="numi">1</td><td>1513672461126</td><td class="numi">10</td></tr><tr class="passedodd"><td><a href="#m11"><b>testall</b>  </a></td><td class="numi">1</td><td>1513672461136</td><td class="numi">3</td></tr>
+</table>
+<h1>Command line test</h1>
+<h2 id="m1">com.steerlean.fizzbuzz.TestDivisibility:testBuzzParser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.steerlean.fizzbuzz.TestDivisibility:testFizzParser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.steerlean.fizzbuzz.TestSumOfDigitsDivisibility:testParse</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.steerlean.fizzbuzz.TestRuleConfiguratorOne:TestConfigure</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.steerlean.fizzbuzz.rule.TestRuleFactory:testSumOfDigitalVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.steerlean.fizzbuzz.TestNumberProcessor:testProcessRange</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.steerlean.fizzbuzz.TestApp:testStart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>$Impl_List@4d93f75b</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.steerlean.fizzbuzz.TestRulesConfigurator:testConfigure</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>com.steerlean.fizzbuzz.rule.$Impl_IRule@5efeb117</td>
+<td>com.steerlean.fizzbuzz.rule.$Impl_IRule@160b4809</td>
+<td>com.steerlean.fizzbuzz.rule.$Impl_IRule@149b4d20</td>
+<td>com.steerlean.fizzbuzz.rule.$Impl_IRule@664e848c</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.steerlean.fizzbuzz.TestSumOfDigitsDivisibility:testall</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.steerlean.fizzbuzz.TestDivisibility:divisiblebyzero</h2>
+<div style="padding-left:3em">
+<p>/ by zero</p>
+com.steerlean.fizzbuzz.rule.DivisibilityRule.parse(DivisibilityRule.java:13)
+<br/>at com.steerlean.fizzbuzz.TestDivisibility.divisiblebyzero(TestDivisibility.java:38)
+<br/>14 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.steerlean.fizzbuzz.rule.TestRuleFactory:testDivisibilityRuleCreation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
